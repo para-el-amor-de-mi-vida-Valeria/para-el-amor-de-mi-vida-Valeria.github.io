@@ -31,10 +31,9 @@ body {
 /* Drawer */
 .drawer {
     position: fixed;
-    top: 10px;
+    top: 24px;
     left: 0;
     width: 100%;
-    background-color: #fff;
     z-index: 900;
 }
 
@@ -60,7 +59,7 @@ body {
     padding: 0;
 }
 
-.drawer-content ul li {
+.drawer-content ul li a{
     padding: 8px 0;
 
     &:hover {
@@ -72,7 +71,7 @@ body {
 .drawer-content ul li a {
   display: block;
   width: 100%;
-  height: 40px;
+  height: 50px;
   align-content: center;
   color: white;
   text-decoration: none;
@@ -82,29 +81,30 @@ body {
   background-color: var(--color-pinkH);
 }
 
-.menu-title {
-    font-size: 1.1rem;
-}
-
 /* Header */
 .top-header {
-  position: fixed;
-  top: 0;
-  height: 50px;
-  width: 100%;
-  background-color: var(--color-white);
-  display: flex;
-  align-items: center;
-  padding: 0 20px;
-  justify-content: space-between;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  z-index: 999;
-  transition: ease;
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 999;
+    transition: ease;
 }
 
 .headerScroll {
     backdrop-filter: blur(15px);
-    background-color: rgba(247, 107, 158, 0.1);
+    background-color: rgba(245, 107, 158, .1);
+}
+
+.menu-title {
+    font-size: 1.1rem;
+    margin-right: 10px;
 }
 
 .menubar {
@@ -174,4 +174,11 @@ footer p{
 .drawer-content ul li a,
 .close-button {
     user-select: none;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .container {
+        padding: 80px 0;
+    }
 }
