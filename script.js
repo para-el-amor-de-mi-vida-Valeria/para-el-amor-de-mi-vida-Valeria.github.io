@@ -30,7 +30,6 @@ navLinks.forEach(link => {
   });
 });
 
-
 // Resaltar el enlace activo del menú
 navLinks.forEach(link => {
   const linkHref = link.href;
@@ -40,12 +39,6 @@ navLinks.forEach(link => {
     link.classList.add('active');
   }
 });
-
-
-// Botón de volver a atrás
-if (!location.pathname.endsWith("index.html") && location.pathname !== "/") {
-  document.getElementById("volverBtn").style.display = "inline-block";
-}
 
 // Cerrar drawer al hacer clic fuera
 document.addEventListener("click", (e) => {
