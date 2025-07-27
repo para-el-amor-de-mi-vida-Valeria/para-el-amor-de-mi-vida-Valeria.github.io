@@ -35,7 +35,7 @@ navLinks.forEach(link => {
   const linkHref = link.href;
   const currentURL = window.location.href;
 
-  if (currentURL === linkHref || currentURL.startsWith(linkHref)) {
+  if (currentURL === linkHref) {
     link.classList.add('active');
   }
 });
