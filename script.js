@@ -47,3 +47,12 @@ document.addEventListener("click", (e) => {
     menuIcon.classList.remove('bx-x');
     }
   });
+
+// Prevenir navegación "atrás"
+window.addEventListener('DOMContentLoaded', () => {
+  history.pushState({}, '', window.location.href);
+
+  window.addEventListener('popstate', (event) => {
+    history.pushState({}, '', window.location.href);
+  });
+});
