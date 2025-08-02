@@ -123,6 +123,11 @@ body {
   text-align: center;
 }
 
+.container p {
+    text-align: left;
+    line-height: 1.7;
+}
+
 .inicio {
   min-height: 100vh;
   display: flex;
